@@ -3,7 +3,7 @@
   }
   a.navbar-brand{
 
-    margin-left: -50px;
+    margin-left: 15px;
     padding: 8px;
     background-color: #40E0D0; 
     font-family: 'Times New Roman', Times, serif;
@@ -21,6 +21,7 @@
   a.navbar-brand:hover{
     color: rgb(175, 175, 175) !important;
    }
+   
 
 
   
@@ -113,10 +114,7 @@
   .dropdown-menu {
     margin: 0;
   }
-  
-  .hamburger {
-    display: none;
-  }
+
   
   img{
     width:100%;
@@ -134,15 +132,21 @@
   }
 
   
-  @media (max-width: 900px) {
+  @media (max-width: 600px) {
     /* hide the hamburger */
     .navbar-expand-lg{
       background-color: #40E0D0 !important;
     }
    
-    .hamburger {
-      display: block; 
-    }
+
+    .dropdown-toggleshow {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+      display: flex;
+     } 
+    
 
     /* hide all the nav-buttons */
     .navbar-nav a {
@@ -157,6 +161,10 @@
 
     button{
       margin-right: 30px; 
+    }
+    button:focus {
+      outline: 1px dotted;
+      outline: auto 5px;
     }
     
     .footer{
